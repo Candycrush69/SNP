@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+ul, ol, li {
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1170px;
+	padding: 15px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+body {
+   background-color:  #E5E5E5;
+}
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 59px;
+    color: #000;
+}
+.button {
+	display: block;
+	text-transform: uppercase;
+	font-family:'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+    padding: 5px;
+}
+
+.yourTour__page {
+    background-image: url(../img/header-img.jpg);
+    background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
+}
+/*Header*/
+header {
+    position:relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+  }
+.header__logo {
+	font-size: 25px;
+	font-weight: 600;
+    color: #000;
+}
+.header__container {
+	display: flex;
+	min-height: 88px;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+} 
+.head-menu__list {
+	display: flex;	
+	flex-wrap: wrap;
+}
+.menu__item {
+	margin: 0px 40px 0px 0px;
+}
+
+.menu__link {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+	font-size: 20px;
+    font-weight: calc(42 / 20 * 100%);
+	color: #fff;
+}
+.menu__link:hover {
+    border-bottom: 2px solid #fff;
+}
+main {
+  flex: 1 1 auto;
+ }
+.header__telephone {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+	font-size: 20px;
+    font-weight: 400;
+	color: #fff;
+}
+/*yourTourPage*/
+.yourTourpage {
+    position:relative;
+
+ }
+  
+ .yourTourpage__body {
+    padding: 119px 0 309px 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+  
+ .yourTourpage__body > *:not(:last-child) {
+    padding: 0 0 50px 0;
+ }
+
+ .yourTourpage__title {
+    text-align: center;
+    max-width: 768px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: calc(82 / 60 * 100%);
+    color: #fff;
+ }
+  
+ .yourTourpage__subtitle {
+    text-align: center;
+    max-width: 562px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	font-size: 20px;
+    line-height: calc(44 / 22 * 100%);
+	color: #fff;
+ }
+
+.yourTourpage__button {
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px, 20px, 5px, 20px;
+    height: 34px;
+    min-width: 118px;
+} 
+.yourTourpage__button:hover {
+    text-decoration: none;
+    color: #000;
+	background-color: #fff;
+}
+ .yourTourpage__background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+ }
+ .yourTourpage__background img {
+    object-position: bottom;
+ }
+
+
+ /*ChooseYourTour*/
+ .ChooseYourTour {
+    position:relative;
+ }
+ .chooseYourTour__body {
+    padding: 135px 0 135px 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+  
+ .chooseYourTour__body > *:not(:last-child) {
+    padding: 0 0 50px 0;
+ }
+
+ .CYT-menu__list {
+     display: flex;
+     flex-wrap: wrap;
+ }
+.CYT__item {
+  margin: 0px 40px 0px 0px;  
+} 
+.CYT__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+	font-size: 23px;
+    text-decoration: none;
+    font-weight: calc(42 / 20 * 100%);
+	color: #000;
+}
+.CYT__link:hover {
+    border-bottom: 2px solid #000;
+    transition: all 0,3s;
+}
+.CYT__link:active {
+    border-bottom: 2px solid #EFA501;
+    color: #EFA501;
+}
+.CYT__Panels {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.CYT__panel {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.CYT__panel img {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.08) 48.44%, rgba(0, 0, 0, 0.6) 100%);
+}
+.panel_text {
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    left: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+}
+.panel__text {
+    left: 0;
+    position: absolute;
+    top: 152px;
+    width: 100%;
+    left: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+}
+.panel__btn {
+    display: flex;
+    justify-content: center;
+    max-width: 199px;
+    max-height: 42;
+    text-align: center;
+}
+.btnbtn {
+    left: 0;
+    position: absolute;
+    top: 453px;
+    width: 100%;
+    left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+}
+.CYT__panel:hover img {
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.6);
+}
+.CYT__panel:hover .panel__btn {
+    border: 1px solid #286562;
+    background-color: #286562;
+    border-radius: 50px; 
+    transition: all 0,3s ease 0;
+}
+
+.CYT__panel img {
+    max-width: 370px;
+    max-height: 531px;
+    border-radius: 25px;
+background-size: cover;
+-moz-background-size: cover;
+background-position: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (width: 1024px) {
+    .CYT__panel {
+        min-width: 450px;
+    }
+    
+}
+
+
+/*assembleyourtour*/
+.assembleyourtour {
+    position:relative;
+ }
+.assembleyourtour__body {
+    padding: 654px 0 653px 0;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #A6A6A6;
+    /*margin-top: 30px;*/
+}
+.AYT__form {
+    max-width: 1170px;
+    min-height: 986px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.AYT__form__item {
+    
+}
+input {
+    background-color: #F9F7F4;
+}
