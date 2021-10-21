@@ -29,7 +29,7 @@
         <div class="yourTourpage">
           <div class="yourTourpage__container container">
             <div class="yourTourpage__body">
-                <h1 class="yourTourpage__title">идеальные путешествия существуют</h1>
+                <h1 class="yourTourpage__title">идеальные<br>путешествия<br>существуют</h1>
                 <p class="yourTourpage__subtitle">идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 <a href="#" class="yourTourpage__button button">Найти тур</a>
             </div>
@@ -98,12 +98,51 @@
             <p class="assembleyourtour__description description">Идейные соображения высшего порядка,<br>а также рамки и место обучения кадров</p>
 
             <div class="AYT__form">
-              <ul class="AYT__form__items">
-                <li class="AYT__form__item">
-                  <span class="AYT__item__label">Имя</span>
+              <div class="AYT__form__items">
+                <div class="AYT__form__item">
+                  <p class=".AYT__item__label">Имя</p>
                   <input type="text" placeholder="Введите ваше имя">
-                </li>
-              </ul>
+                </div>
+                <div class="AYT__form__item">
+                  <p class=".AYT__item__label">Направление</p>
+                  <input name="city" list="cities" placeholder="Куда хотите ехать"/>
+                <datalist id="cities">
+                  <option value="Москва" />
+                  <option value="Лондон" />
+                  <option value="Берлин" />
+                  <option value="Нью-Йорк" />
+                  <option value="Буэнос-Айрес" />
+                </datalist>
+                </div>
+                <div class="AYT__form__item">
+                  <p class=".AYT__item__label">Email</p>
+                  <input type="text" placeholder="example@gmail.com">
+                </div>
+                <div class="AYT__form__item">
+                  <p class=".AYT__item__label">Телефон</p>
+                  <input type="tel" placeholder="+ 7 (___) ___-__-__">
+                </div>
+                <div class="AYT__form__item">
+                  <p class=".AYT__item__label">Дата от</p>
+                  <input type="date">
+                </div>
+                <div class="AYT__form__item">
+                  <p class=".AYT__item__label">Дата до</p>
+                  <input type="date">
+                </div>
+                <div class="AYT__form__item">
+                  <p class=".AYT__item__label">Комментарий</p>
+                  <textarea></textarea>
+                </div>
+              </div>
+              <div class="AYT__form__panel">
+                <p>Вам уже есть 18 лет?</p>
+                <input type="radio" class="radio" id="radio" />
+                  <label for="radio">Да</label>
+
+                <input type="radio" class="radio" id="radio" />
+                  <label for="radio">Нет</label>
+              </div>
             </div>
           </div>
         </div>
